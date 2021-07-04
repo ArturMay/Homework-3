@@ -1,0 +1,63 @@
+.header {
+  background-color: #80007a;
+  background-image: url(../img/m-h-night.jpg);
+  background-size: cover;
+  background-position: 50%;
+  border-bottom-right-radius: 50%; }
+
+.header-wrap {
+  max-width: 1570px;
+  margin: 0 auto;
+  padding: 0 15px;
+  min-height: 700px;
+  border: 1px solid #ff5100; }
+
+.landing-logo {
+  display: flex; }
+  .landing-logo img {
+    margin-right: 20px; }
+  .landing-logo p {
+    font-size: 24px; }
+    .landing-logo p span {
+      font-size: 14px;
+      display: table; }
+
+main {
+  background-color: #21232e; }
+
+.section_text {
+  font-size: 35px;
+  text-align: center;
+  color: #fff; }
+
+.section_card_wrap {
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 0 15px;
+  border: 1px solid #00ff95; }
+
+.section_card {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #3b3f50;
+  margin-bottom: 30px;
+  padding: 15px; }
+
+.section_card_img {
+  display: block;
+  width: 430px;
+  height: 290px;
+  border-radius: 10px; }
+
+.section_card_right_container {
+  text-align: center;
+  width: calc(100% - 430px); }
+
+.section_card_heading {
+  font-size: 21px;
+  color: #fff;
+  margin-bottom: 50px; }
+
+.section_card_text, .section_link {
+  font-size: 16px;
+  color: #c0c3ce; }

@@ -1,0 +1,87 @@
+// Write your styles here
+
+.header {
+    background-color: $contentBackground;
+    background-image: $background-image;
+    background-size: cover;
+    background-position: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.header-wrap {
+    max-width: 1570px;
+    margin: 0 auto;
+    padding: 0 15px;
+    min-height: 700px;
+    border: 1px solid rgb(255, 81, 0);
+}
+
+.landing-logo {
+    display: flex;
+
+    img {
+        margin-right: 20px;
+    }
+
+    p {
+        font-size: 24px;
+
+        span {
+            font-size: 14px;
+            display: table;
+        }
+    }
+}
+
+
+main {
+    background-color: $main-bg-color;
+}
+
+.section_text {
+    font-size: 35px;
+    text-align: center;
+    color: $text-primarycolor;
+}
+
+.section_card_wrap {
+   max-width: 1210px;
+   margin:0 auto;
+   padding: 0 15px;
+   border: 1px solid rgb(0, 255, 149); 
+}
+
+.section_card {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $primarycolor;
+    margin-bottom: 30px;
+    padding: 15px;
+}
+
+.section_card_img {
+    display: block;
+    width: 430px;
+    height:290px;
+    border-radius: 10px;
+}
+
+.section_card_right_container {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    text-align: center;
+    width: calc(100% - 430px);
+}
+
+.section_card_heading {
+    font-size: 21px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.section_card_text, .section_link {
+    font-size: 16px;
+    color: #c0c3ce;
+}
