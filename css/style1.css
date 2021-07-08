@@ -13,14 +13,42 @@
   border: 1px solid #ff5100; }
 
 .landing-logo {
-  display: flex; }
+  display: flex;
+  align-items: center; }
   .landing-logo img {
-    margin-right: 20px; }
+    margin-right: 20px;
+    width: 50px;
+    height: 50px; }
   .landing-logo p {
-    font-size: 24px; }
+    font-size: 24px;
+    color: #2c2f3c; }
     .landing-logo p span {
       font-size: 14px;
       display: table; }
+
+.header_heading {
+  font-size: 50px;
+  font-weight: bold;
+  color: #2c2f3c;
+  margin-bottom: 60px;
+  white-space: pre-line; }
+
+.header_text {
+  color: #2c2f3c;
+  font-size: 16px;
+  margin-bottom: 65px;
+  white-space: pre-line; }
+
+.header_button, .section_banner_button {
+  display: inline-block;
+  min-width: 150px;
+  padding: 15px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  background-color: #699900;
+  margin: 0 155px 175px 0; }
 
 main {
   background-color: #fff; }
@@ -29,6 +57,8 @@ main {
   font-size: 35px;
   text-align: center;
   color: #2c2f3c; }
+  .section_text p::last-word {
+    background-color: #14a0c7; }
 
 .section_card_wrap {
   max-width: 1210px;
@@ -59,5 +89,33 @@ main {
   margin-bottom: 50px; }
 
 .section_card_text, .section_link {
+  font-size: 16px;
+  color: #c0c3ce; }
+
+.footer {
+  background-color: #21232e; }
+
+.footer-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 255px;
+  border: 1px solid #ff5100;
+  max-width: 1570px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+.footer_text {
+  display: block;
+  width: 300px;
+  font-size: 14px;
+  color: #c0c3ce;
+  word-wrap: break-word; }
+
+.footer_logo p {
+  font-size: 24px;
+  color: #c0c3ce; }
+
+.footer-cr {
   font-size: 16px;
   color: #c0c3ce; }
