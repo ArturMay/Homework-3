@@ -1,5 +1,56 @@
 // Write your styles here
 
+
+.body {
+    font-family: 'Fresca', sans-serif;
+}
+
+@mixin button-styles {
+    display: inline-block;
+    min-width:150px;
+    padding: 15px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-color: $btn-color;
+    height: 50px;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.header_button, .section_banner_button {
+    @include button-styles;
+}
+
+@mixin paragraph-style {
+    font-size: 24px;
+    color:$text-primarycolor;
+}
+
+@mixin link-style {
+    &:hover {
+        opacity: 0.8;
+        transition: all 0.3s ease-in-out;
+        color: red;
+    }
+}
+
+.login {
+    margin-left: 150px;
+    font-size: 20px;
+    color: #fff;
+    @include link-style;
+}
+
+.highlighter {
+    background: $highlight-color;
+}
+
 .header {
     background-color: $contentBackground;
     background-image: $background-image;
@@ -13,7 +64,7 @@
     margin: 0 auto;
     padding: 0 15px;
     min-height: 700px;
-    border: 1px solid rgb(255, 81, 0);
+    // border: 1px solid rgb(255, 81, 0);
 }
 
 .landing-logo {
@@ -27,8 +78,7 @@
     }
 
     p {
-        font-size: 24px;
-        color:$text-primarycolor;
+        @include paragraph-style;
 
         span {
             font-size: 14px;
@@ -42,7 +92,7 @@
     font-weight: bold;
     color: $text-primarycolor;
     margin-bottom: 60px;
-    white-space: pre-line;
+    width: 450px;
 }
 
 .header_text {
@@ -52,24 +102,9 @@
     white-space: pre-line;
 }
 
-@mixin button-styles {
-    display: inline-block;
-    min-width:150px;
-    padding: 15px;
-    font-size: 16px;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    background-color: $btn-color;
-    margin:0 155px 175px 0;
-}
-
-.header_button, .section_banner_button {
-    @include button-styles;
-}
-
 main {
     background-color: $main-bg-color;
+    position: relative;
 }
 
 .section_text {
@@ -77,16 +112,16 @@ main {
     text-align: center;
     color: $text-primarycolor;
 
-    p::last-word {
-        background-color: #14a0c7;
-    }
+    // p::last-word {
+    //     background-color: #14a0c7;
+    // }
 }
 
 .section_card_wrap {
    max-width: 1210px;
-   margin:0 auto;
+   margin:0 auto 180px;
    padding: 0 15px;
-   border: 1px solid rgb(0, 255, 149); 
+//    border: 1px solid rgb(0, 255, 149); 
 }
 
 .section_card {
@@ -95,6 +130,7 @@ main {
     background-color: $primarycolor;
     margin-bottom: 30px;
     padding: 15px;
+    align-items: center;
 }
 
 .section_card_img {
@@ -105,10 +141,6 @@ main {
 }
 
 .section_card_right_container {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
     text-align: center;
     width: calc(100% - 430px);
 }
@@ -119,9 +151,35 @@ main {
     margin-bottom: 50px;
 }
 
-.section_card_text, .section_link {
+.section_card_text, .section_link, .section_banner_text {
     font-size: 16px;
     color: #c0c3ce;
+}
+
+.section_link {
+    @include link-style;
+}
+
+.section_banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+    // border: 1px solid #00ff62d7;
+    min-height: 150px;
+    background: $background-gradient;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.section_banner_heading {
+    @include paragraph-style;
 }
 
 .footer {
@@ -132,12 +190,10 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 255px;
-    border: 1px solid rgb(255, 81, 0);
+    // border: 1px solid rgb(255, 81, 0);
     max-width: 1570px;
     margin: 0 auto;
-    padding: 0 15px;
-
+    padding: 130px 15px 60px;
 }
 
 .footer_text {
